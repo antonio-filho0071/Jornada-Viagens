@@ -38,16 +38,4 @@ h1 {
   color: var(--primary-color);
 }
 
-header{
-  background-color: var(--background-tertiary-color);
-}
 
-a{
-  text-decoration: none;
-  color: var(--text-secondary-color);
-  
-}
-
-a:hover{
-  color: var(--button-hover-color)
-}

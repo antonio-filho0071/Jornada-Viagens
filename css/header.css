@@ -8,15 +8,15 @@ header {
   position: relative;
 }
 
-.logo {
+.logo-mobile {
   display: inline-block;
   width: 68px;
   height: 64px;
 }
 
-/* No mobile não é hover a:hover {
-  color: var(--button-hover-color);
-} */ 
+.logo-desktop{
+  display: none;
+}
 
 nav {
   display: none;
@@ -48,7 +48,7 @@ input[type="checkbox"]:checked ~ nav {
   font-weight: var(--menu-text-weight);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navigation-menu {
     margin-top: 0;
   }
@@ -72,4 +72,26 @@ input[type="checkbox"]:checked ~ nav {
   .list-links li {
     margin: 0;
   }
+
+}
+
+@media screen and (min-width:1024px) {
+  .logo-mobile{
+    display: none;
+  }
+  
+  .logo-desktop{
+    display: block;
+    width: 260px;
+    height: 64px;
+  }
+
+  header {
+    padding: 38px 160px;
+  }
+
+  .navigation-menu a:hover {
+    color: var(--button-hover-color);
+  }
+
 }
